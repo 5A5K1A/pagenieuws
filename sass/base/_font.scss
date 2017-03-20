@@ -1,0 +1,66 @@
+/* example
+@font-face {
+    font-family: 'Akzidenz Grotesk Con Bold';
+    src: url('../fonts/akzidenzgroteskbe-boldcn-webfont.eot');
+    src: url('../fonts/akzidenzgroteskbe-boldcn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/akzidenzgroteskbe-boldcn-webfont.woff') format('woff'),
+         url('../fonts/akzidenzgroteskbe-boldcn-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+$font-name: "achmea-icons";
+@font-face {
+	font-family: 'achmea-icons';
+	src: url("../fonts/achmea-icons.eot");
+	src: url("../fonts/achmea-icons.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/achmea-icons.woff") format("woff"),
+		 url("../fonts/achmea-icons.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
+
+$font-name: "blenderpro-bold";
+@font-face {
+	font-family: 'BlenderPro-Bold';
+	src: url("../fonts/blenderpro-bold-webfont.eot");
+	src: url("../fonts/blenderpro-bold-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/blenderpro-bold-webfont.woff") format("woff"),
+		 url("../fonts/blenderpro-bold-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
+
+$font-name: "blenderpro-book";
+@font-face {
+	font-family: 'BlenderPro-Book';
+	src: url("../fonts/blenderpro-book-webfont.eot");
+	src: url("../fonts/blenderpro-book-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/blenderpro-book-webfont.woff") format("woff"),
+		 url("../fonts/blenderpro-book-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
+
+$font-name: "blenderpro-medium";
+@font-face {
+	font-family: 'BlenderPro-Medium';
+	src: url("../fonts/blenderpro-medium-webfont.eot");
+	src: url("../fonts/blenderpro-medium-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/blenderpro-medium-webfont.woff") format("woff"),
+		 url("../fonts/blenderpro-medium-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
+
+$font-name: "blenderpro-thin";
+@font-face {
+	font-family: 'BlenderPro-Thin';
+	src: url("../fonts/blenderpro-thin-webfont.eot");
+	src: url("../fonts/blenderpro-thin-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/blenderpro-thin-webfont.woff") format("woff"),
+		 url("../fonts/blenderpro-thin-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal
+}
