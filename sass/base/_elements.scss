@@ -16,25 +16,23 @@ body {
 	font-size: $base-font-size;
 	color: $text-color;
 	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
-	font-feature-settings: "kern" on;
 
-	@include breakpoint(sm) { 
-		background-color: mistyrose; 
-	}
+	// @include breakpoint(sm) {
+	// 	background-color: mistyrose;
+	// }
 
-	@include breakpoint(md) { 
-		background-color: lavender; 
-	}
+	// @include breakpoint(md) {
+	// 	background-color: lavender;
+	// }
 
-	@include breakpoint(lg) { 
-		background-color: wheat; 
-	}
+	// @include breakpoint(lg) {
+	// 	background-color: wheat;
+	// }
 
-	@include breakpoint(xl) { 
-		background-color: azure; 
-	}
+	// @include breakpoint(xl) {
+	// 	background-color: azure;
+	// }
 }
 
 // images
@@ -48,6 +46,10 @@ a[href="#"] {
 	cursor: not-allowed;
 }
 
+a {
+	color: $pink;
+}
+
 // list resets
 li {
 	> ul,
@@ -58,7 +60,7 @@ li {
 }
 
 nav {
-	ol, 
+	ol,
 	ul {
 		margin: 0;
 		padding: 0;
@@ -67,4 +69,24 @@ nav {
 	li {
 		list-style: none;
 	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: $gray-darker;
+}
+
+.container {
+    max-width: 68.5714285714rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+::selection {
+    background: #c15683;
+    color: #fff;
+    text-shadow: none;
 }

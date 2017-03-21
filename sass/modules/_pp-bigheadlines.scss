@@ -1,0 +1,54 @@
+.ppmodule_headlines {
+
+	.pp_bigheadlines_container {
+		float: none;
+		margin: auto;
+		max-width: 68.5714285714rem;
+	}
+
+	.pp_bigheadlines_image {
+		border-radius: 5px;
+	}
+
+	.pp_bigheadlines {
+
+		&_date {
+			color: $gray;
+			font-size: .9rem;
+			margin-bottom: .3rem;
+		}
+
+		&_data {
+			height: auto;
+			margin-bottom: 1.5rem;
+		}
+
+		&_title {
+			margin-bottom: .5rem;
+			h2 {
+				font-size: 20px;
+			}
+		}
+
+		&_more {
+			@include read-more;
+		}
+	}
+
+	@media screen and (min-width: $breakpoint-sm) {
+
+		.mm_listitem {
+			float: left;
+
+			.pp_one-of-four {
+				border-radius: 5px;
+				max-height: 12rem;
+				width: 25%;
+			}
+
+			.pp_three-of-four {
+				width: 70%;
+			}
+		}
+	}
+}

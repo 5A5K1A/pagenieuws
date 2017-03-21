@@ -1,0 +1,45 @@
+.pp-headline-blocks {
+
+	.pp_blockheadlines_container {
+		margin: auto;
+		max-width: 68.5714285714rem;
+		padding-top: 1rem;
+	}
+
+	.pp-block-item {
+		&-media {
+			border-radius: ($gutter-sm * .5);
+		}
+		&-title h2 {
+			line-height: 1.75rem;
+		}
+		&-date {
+			color: $gray;
+			display: inline-block;
+			font-size: .9rem;
+			margin-bottom: .3rem;
+		}
+		&-intro {
+			color: $gray-dark;
+			@include hocus {
+				color: $gray-dark;
+			}
+		}
+		&-readmore {
+			@include read-more;
+		}
+	}
+
+	.pp_one-of-three {
+		margin-right: 0;
+		width: auto;
+	}
+
+	@media screen and (min-width: $breakpoint-sm) {
+
+		.pp_one-of-three {
+			margin-bottom: 0;
+			width: 31%;
+		}
+	}
+}

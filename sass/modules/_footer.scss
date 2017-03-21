@@ -1,0 +1,38 @@
+footer#bottom {
+
+	.address,
+	.sitemap {
+		border-top: 1px solid $pink-light;
+	}
+
+	h4 {
+		color: $gray-dark;
+		display: inline-block;
+		font-family: $font-sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 22px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		text-transform: none;
+		overflow: hidden;
+	}
+
+	a {
+		color: $gray-dark;
+		@include hocus {
+			color: $pink;
+		}
+	}
+
+	.search input {
+		color: #25252a;
+		border: 1px solid #949499;
+		background-color: transparent;
+		width: 100%;
+
+		&:focus {
+			border-color: $pink;
+		}
+	}
+}

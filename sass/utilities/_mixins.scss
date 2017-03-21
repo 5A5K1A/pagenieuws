@@ -2,7 +2,6 @@
  * Mixins
  */
 
-
 // mixin for automatically including focus styles with hover
 @mixin hocus {
 	&:hover,
@@ -15,28 +14,60 @@
 @mixin breakpoint($viewport) {
 	// extra large
 	@if $viewport == xl {
-		@media screen and (min-width: $breakpoint-xl) { 				
-			@content; 
+		@media screen and (min-width: $breakpoint-xl) {
+			@content;
 		}
 	}
 
 	// large
 	@if $viewport == lg {
-		@media screen and (min-width: $breakpoint-lg) { 				
-			@content; 
+		@media screen and (min-width: $breakpoint-lg) {
+			@content;
 		}
 	}
 	// medium
 	@else if $viewport == md {
-		@media screen and (min-width: $breakpoint-md) { 
-			@content; 
+		@media screen and (min-width: $breakpoint-md) {
+			@content;
 		}
 	}
 	// small
 	@else if $viewport == sm {
 		@media screen and (min-width: $breakpoint-sm)  {
-			@content; 
+			@content;
 		}
 	}
 }
 // usage:  @include breakpoint(lg) { color: hotpink; }
+
+// mixin for converting hex to rgba
+@mixin background-opacity($color, $opacity: 0.3) {
+	background: $color;
+	background: rgba($color, $opacity);
+}
+// usage:  @include background-opacity(#333, 0.5);
+
+// mixin for read more texts
+@mixin read-more() {
+	color: $pink;
+	display: table;
+	margin-top: 1.5em;
+	position: relative;
+	text-decoration: underline;
+	@include hocus {
+		color: $gray-darker;
+	}
+	&::after {
+		content: ' >';
+	}
+}
+
+// mixin for social icons on sprite
+@mixin social-sprite($x, $y) {
+	background-position-x: $x;
+	background-position-y: $y;
+
+	&:hover {
+		background-position-y: $y + 48px;
+	}
+}

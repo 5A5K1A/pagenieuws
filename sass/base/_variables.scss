@@ -1,23 +1,36 @@
-/* 
+/*
  * Variables
  */
 
 // color palette
 $white: 			#fff;
-$blue:				#2980b9;
-$gray-dark:			#222;
+$pink:				#c15683;
+$pink-light: 		#dfbcc0;
+$pink-lighter: 		#fff2f3;
+$purple-gray: 		#f4f4f6;
+$gray: 				#949499;
+$gray-dark:			#5e5e63;
+$gray-darker: 		#25252a;
 
 // color usage
 $bg-color:			$white;
-$brand-color:		$blue;
+$brand-color:		$pink;
 $text-color:		$gray-dark;
 
 // font properties
-$font-sans-serif:	Helvetica, Arial, sans-serif;
+$font-sans-serif:	'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-serif: 		Times, Georgia;
+$font-achmea: 		'achmea-icons';
+$font-blender-book: 'blenderpro-book', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-blender-thin: 'blenderpro-thin', 'HelveticaNeue-UltraLight', Helvetica, Arial, sans-serif;
 $base-font-family: 	$font-sans-serif;
 $base-font-size:   	1em;
 $base-line-height: 	1.65;
+
+$headings-font-family: 	$font-blender-book;
+$headings-font-weight: 	500;
+$headings-line-height: 	1.1;
+$headings-color: 		inherit;
 
 // magic numbers
 $gutter-sm: 		1rem;

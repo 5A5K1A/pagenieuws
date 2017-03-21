@@ -1,0 +1,49 @@
+.pp_table {
+
+	.top_main_client,
+	.content_main_client,
+	.bottom_main_client {
+		margin: auto;
+		width: 100%;
+	}
+
+	.pp_moduleblock {
+		&:nth-of-type(even) {
+			background-color: $purple-gray;
+			margin: 0 -1rem;
+			padding: 1rem;
+		}
+		&:nth-of-type(odd) {
+			margin-top: 1rem;
+		}
+	}
+
+	.title_big_headlines,
+	.pp_blockheadlines_tools {
+		float: none;
+		font-family: $font-blender-thin;
+		font-size: 32px;
+		margin: auto;
+		max-width: 68.5714285714rem;
+		a {
+			color: $gray-darker;
+			@include hocus {
+				text-decoration: none;
+			}
+		}
+	}
+
+	@media screen and (min-width: $breakpoint-sm) {
+
+		.pp_moduleblock {
+			&:nth-of-type(even) {
+				background-color: $pink-lighter;
+			}
+		}
+
+		.content_main_case,
+		.content_main_client {
+			display: block;
+		}
+	}
+}

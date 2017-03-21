@@ -1,0 +1,50 @@
+.div_facebookicon, .div_googleplusicon, .div_linkedinicon, .div_twittericon, .div_youtubeicon,
+.social-media.gray .facebook, .social-media.gray .googleplus, .social-media.gray .linkedin,
+.social-media.gray .twitter, .social-media.gray .youtube {
+	background-image: url('img/social-sd0776dfc84.png');
+	background-repeat: no-repeat;
+	height: 24px;
+	margin: 2px;
+	width: 24px;
+
+	&:hover {
+		background-image: url('img/social-sd0776dfc84.png');
+		overflow: hidden;
+	}
+}
+
+.div_twittericon,
+.social-media.gray .twitter {
+	@include social-sprite(0, -2884px);
+}
+
+.div_facebookicon,
+.social-media.gray .facebook {
+	@include social-sprite(0, -48px);
+}
+
+.div_linkedinicon,
+.social-media.gray .linkedin {
+	@include social-sprite(0, -2580px);
+}
+
+.div_googleplusicon,
+.social-media.gray .googleplus {
+	@include social-sprite(0, -256px);
+}
+
+.div_youtubeicon,
+.social-media.gray .youtube {
+	@include social-sprite(0, -3188px);
+}
+
+/* social sharing buttons - addtoany */
+.pp_bigheadlines_share,
+.pp_blockheadlines_share {
+	float: right;
+	position: relative;
+	bottom: 2rem;
+	.pp_sharethis_custom {
+		color: $pink;
+	}
+}

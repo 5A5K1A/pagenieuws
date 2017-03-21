@@ -1,0 +1,19 @@
+#latestrelease_overlay {
+
+	margin: 5vh -1rem 0 -1rem;
+
+	.latestrelease_innerwrapper {
+		@include background-opacity($pink, .7);
+	}
+
+	#latest-overlaytext {
+		margin: auto;
+		max-width: 68.5714285714rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media screen and (min-width: $breakpoint-sm) {
+		 margin-top: -1.5rem;
+	}
+}
